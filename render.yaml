@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: hc-instagram-worker
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: HC_WORKER_TOKEN
+        generateValue: true
+      - key: HC_ALLOWED_USERNAMES
+        value: "aamersiddiqui,hyderabadcreators"

@@ -1,0 +1,15 @@
+HC Instagram Worker 1.1.0 validation
+
+18 pytest tests passed (12 API checks, 6 collector checks).
+Live local HTTP health endpoint: PASS.
+Live local HTTP status rejects missing bearer token: PASS.
+Live local HTTP authenticated service status: PASS.
+Python compilation: PASS.
+
+Anonymous live Instagram profile request: unavailable from this environment; no media fetched.
+Render connection: not confirmed.
+Public deployment: not performed.
+Worker URL: not issued.
+No Docker image build or large-scale throughput test was performed.
+
+The earlier PHP/DOM plugin tests remain separate from worker validation.
